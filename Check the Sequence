@@ -1,0 +1,64 @@
+/*Check Number Sequence
+You are given S a sequence of N integers i.e. S= s1,s2 ..... sn. Compute if it is possible to
+split S into two parts: s1,s2...sn and si +1 , si+2 ....... Sn (0 < = I < = n) in such a way that
+the first part is strictly decreasing while the second one is strictly increasing one.
+
+Note: We say that x is strictly larger than y when x > y.
+So, a strictly increasing sequence can be 1 4 8. However 1 4 4 is not a strictly increasing
+sequence
+
+Sequence made up of only increasing numbers or only decreasing numbers is a valid
+sequence . So in both the cases print true.
+
+Input format :
+Line 1: Integer ‘n’
+Lin 2 and Onwards: ‘n’ integers on ‘n’ lines( single integer on each line)
+
+Out put format :
+“true” or “false” (without quotes)
+
+Constraints :
+1 < = n < = 10 to power 7*/
+
+
+
+
+#include<iostream>
+using namespace std;
+
+void number_sequence(int a[],int n)
+{
+    int count;
+    for(int i=0;i<=n;i++)
+    {
+        for(int j=i+1;j<n;j++)
+        {
+            if(a[i]==a[j])
+            {
+                count++;
+            }
+        }
+        
+    }
+         if(count==0)
+        {
+            cout<<"True";
+        }
+        else
+        {
+            cout<<"False";
+        }
+}
+int main()
+{
+    int n,a[n];
+    cin>>n;
+    
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    
+    number_sequence(a,n);
+    return 0;
+}
