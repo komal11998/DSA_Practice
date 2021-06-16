@@ -6,6 +6,7 @@ using namespace std;
 void printDuplicate(string s)
 {
   int count[NO_OF_CHARS] = {};
+  transform(s.begin(), s.end(), s.begin(), ::tolower);
   for (int i = 0; i < s.size(); i++)
     count[s[i]]++;
 
