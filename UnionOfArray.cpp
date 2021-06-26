@@ -14,6 +14,7 @@ public:
     for (int i = 0; i < m; i++)
       s.insert(b[i]);
 
+    cout << "Number of elements in the Union: ";
     return s.size();
   }
 };
