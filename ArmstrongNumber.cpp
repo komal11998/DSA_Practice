@@ -9,6 +9,7 @@ int main()
   cin >> n;
 
   int sum = 0;
+  int temp = n;
   int lastdigit;
   while (n > 0)
   {
@@ -17,7 +18,7 @@ int main()
     n = n / 10;
   }
 
-  if (sum == n)
+  if (temp == sum)
   {
     cout << "Armstrong Number" << endl;
   }
