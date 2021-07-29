@@ -8,7 +8,6 @@ int main()
 
   int arr[n];
 
-  cout << "Enter the elements of array ";
   for (i = 0; i < n; i++)
   {
     cin >> arr[i];
@@ -28,8 +27,7 @@ int main()
     arr[j + 1] = current;
   }
 
-  cout << "After Insertion Sort ";
-  for (i = 0; i < n; i++)
+    for (i = 0; i < n; i++)
   {
     cout << arr[i] << " ";
   }
