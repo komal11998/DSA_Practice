@@ -42,7 +42,6 @@ int main()
   {
     cout << arr[i] << " ";
   }
-
   cout << endl;
 
   SelectionSort(arr, n);
